@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="MyTabWidgetTheme" parent="@*android:style/Theme.Light">
+        <item name="android:tabWidgetStyle">@style/MyTabWidget</item>
+    </style>
+    <style name="MyTabWidget" parent="@*android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/MyTabWidgetText</item>
+    </style>
+    <style name="MyTabWidgetText" parent="@*android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

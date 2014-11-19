@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="10" android:versionName="1.0.5" package="edu.nctu.e3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+        <activity android:label="@string/app_name" android:name="edu.nctu.e3.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.nctu.e3.LoginiNCTUActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.CourseListActivity" />
+        <activity android:name="edu.nctu.e3.CourseDetailActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.MembersActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.AnnouncementsActivity" />
+        <activity android:name="edu.nctu.e3.AnnouncementActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.MaterialsActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.HomeworksActivity" />
+        <activity android:name="edu.nctu.e3.MaterialFilesActivity" />
+        <activity android:name="edu.nctu.e3.HomeworkActivity" />
+        <activity android:name="edu.nctu.e3.SendMailActivity" />
+        <activity android:name="edu.nctu.e3.ScoreActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.CampusMapActivity" />
+        <activity android:name="edu.nctu.e3.ContactUsActivity" />
+        <activity android:name="edu.nctu.e3.MemberActivity" />
+        <activity android:name="edu.nctu.e3.ForumListActivity" />
+        <activity android:name="edu.nctu.e3.NewsActivity" />
+        <activity android:name="edu.nctu.e3.TopicListActivity" />
+        <activity android:name="edu.nctu.e3.TopicDetailActivity" />
+        <activity android:name="edu.nctu.e3.AddAnnouncementActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.TeaHomeworksActivity" />
+        <activity android:theme="@style/MyTabWidgetTheme" android:name="edu.nctu.e3.TeaHomeworkActivity" />
+        <activity android:name="edu.nctu.e3.HomeworkSubmittedFilesActivity" />
+        <activity android:name="edu.nctu.e3.AddReplyActivity" />
+        <activity android:name="edu.nctu.e3.AddTopicActivity" />
+        <activity android:name="edu.nctu.e3.CurriculumActivity" />
+        <activity android:name="edu.nctu.e3.LoginCurriculumActivity" />
+        <activity android:name="edu.nctu.e3.NewsDetailActivity" />
+        <activity android:name="edu.nctu.e3.ForgetPasswordActivity" />
+        <activity android:label="@string/title_activity_bus" android:name="edu.nctu.e3.BusActivity" />
+    </application>
+</manifest>

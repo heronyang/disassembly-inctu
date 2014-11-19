@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="top" android:id="@id/titleBackground" android:background="@drawable/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/activityTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/homework_hand_up" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submitted_files:" />
+    <ListView android:id="@id/filelist" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

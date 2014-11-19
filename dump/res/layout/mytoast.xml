@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/toast_background" android:layout_width="240.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/msg" android:layout_width="240.0dip" android:layout_height="120.0dip" android:text="Large Text" />
+</LinearLayout>

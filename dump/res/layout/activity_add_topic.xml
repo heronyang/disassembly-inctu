@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/titleBackground" android:background="@drawable/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_forum_topic" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discussion_topic:" />
+            <EditText android:id="@id/topic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="text">
+                <requestFocus />
+            </EditText>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/respective_unit:" />
+            <Spinner android:id="@id/unit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/respective_forum:" />
+            <Spinner android:id="@id/forum" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/begin_date:" />
+            <EditText android:id="@id/begindate" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:ems="10" android:inputType="none" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_date:" />
+            <EditText android:id="@id/enddate" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:ems="10" android:inputType="none" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discuss_content:" />
+            <EditText android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="5" android:ems="10" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attach_file:" />
+                <LinearLayout android:orientation="vertical" android:id="@id/files" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/pickfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pick_file" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@id/finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finish" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="top" android:id="@id/titleBackground" android:background="@drawable/curriculum_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/activityTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_curriculum" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/space" android:background="@*android:color/white" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="" />
+            <edu.nctu.e3.helpers.HScrollView android:id="@id/datebar" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/datebarHolder" android:background="@*android:color/black" android:layout_width="700.0dip" android:layout_height="30.0dip">
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="一" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="二" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="三" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="四" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="五" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="六" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:background="#ff80ff84" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="日" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </FrameLayout>
+            </edu.nctu.e3.helpers.HScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <edu.nctu.e3.helpers.VScrollView android:id="@id/timebar" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/timebarHolder" android:background="@*android:color/black" android:layout_width="50.0dip" android:layout_height="1120.0dip">
+                        <TextView android:gravity="center" android:id="@id/M" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="06:00" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/N" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="07:00" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/A" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="08:00" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/B" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="09:00" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/C" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="10:10" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/D" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="11:10" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/X" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="12:20" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/E" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="13:20" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/F" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="14:20" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/G" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="15:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/H" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="16:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/Y" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="17:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/I" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="18:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/J" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="19:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/K" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="20:30" android:layout_weight="1.0" />
+                        <TextView android:gravity="center" android:id="@id/L" android:background="#ff80ff84" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="1.0dip" android:text="21:30" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </FrameLayout>
+            </edu.nctu.e3.helpers.VScrollView>
+            <edu.nctu.e3.helpers.VScrollView android:id="@id/vs" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <edu.nctu.e3.helpers.HScrollView android:id="@id/hs" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <edu.nctu.e3.helpers.UnScrollableGridView android:id="@id/curriculum" android:background="@*android:color/white" android:layout_width="700.0dip" android:layout_height="1120.0dip" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="7" />
+                    </FrameLayout>
+                </edu.nctu.e3.helpers.HScrollView>
+            </edu.nctu.e3.helpers.VScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other_courses:" />
+        <ListView android:orientation="vertical" android:id="@id/othercourses" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

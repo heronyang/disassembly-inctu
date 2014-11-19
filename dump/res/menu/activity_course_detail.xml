@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/back_to_course_list" android:orderInCategory="100" android:title="@string/back_to_course_list" />
+    <item android:id="@id/logout" android:orderInCategory="100" android:title="@string/log_out" />
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="top" android:id="@id/titleBackground" android:background="@drawable/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@*android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/activityTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/homework" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homework_name:" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/related_unit" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/content" />
+        <TextView android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deadline" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ways_to_submit" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <ListView android:id="@id/attachfilelist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/handedupfilelist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

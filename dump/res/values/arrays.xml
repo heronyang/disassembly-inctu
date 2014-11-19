@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coursedetails">
+        <item>公告</item>
+        <item>教材</item>
+        <item>作業</item>
+        <item>討論</item>
+        <item>寄送郵件</item>
+        <item>成績</item>
+        <item>成員名單</item>
+    </string-array>
+</resources>

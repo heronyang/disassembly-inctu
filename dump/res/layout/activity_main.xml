@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="10.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/inctu" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inctu" android:drawableTop="@drawable/ic_ict" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="30.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/curriculum" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/my_curriculum" android:drawableTop="@drawable/ic_curriculum" />
+        <Button android:id="@id/map" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/campus_map" android:drawableTop="@drawable/ic_map" />
+    </LinearLayout>
+</LinearLayout>
